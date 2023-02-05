@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewPagerData"
+            type="com.example.ilabankdemo.models.ViewPagerData" />
+    </data>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@{context.getDrawable(viewPagerData.imageResource)}"
+        app:shapeAppearance="@style/viewPagerImageView"
+        tools:src="@drawable/india">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+</layout>
